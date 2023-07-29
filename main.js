@@ -48,26 +48,35 @@ nurseOlynyk.addCertification('Genetics'); // This Method calls the addCertifcati
 console.log(nurseOlynyk.certifications);
 
 class Doctor extends HospitalEmployee {
-  constructor(name, insurance) {
+  constructor(name, insurance, qualifications) {
     super(name);
     this._insurance = insurance;
+    this._qualifications = qualifications;
   } 
   
   get insurance() {
     return this._insurance;
   }
+  get qualification() {
+    return this._qualifications;
+  }
   
   addinsurance(newInsurance) {
     this.insurance.push(newInsurance);
   }
+
+  addqualifications(Qualification) {
+    this.qualifications.push(Qualification);
+  }
 }
 
-const docIbrahim = new Doctor('Ibrahim', 'Stanbic IBTC'); // Creates an instance of the Doctor class and save it to variable docIbrahim.
+const docIbrahim = new Doctor('Ibrahim', 'Stanbic IBTC', ['MBBS', 'Msc Public Health', 'GMC License']); 
+// Creates an instance of the Doctor class and save it to variable docIbrahim.
 
 docIbrahim.takeVacationDays(10);
-
 console.log(docIbrahim.remainingVacationDays);
 console.log(docIbrahim.insurance);
+console.log(docIbrahim.qualification);
 
 console.log(HospitalEmployee.generatePassword()) // This generates password 
 
