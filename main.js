@@ -32,7 +32,7 @@ class Nurse extends HospitalEmployee { // Child Class.
 
   addCertification(newCertification) {
     this._certifications.push(newCertification);
-  } // Method to push the newly added property.
+  } // Method to push the newly added certification into the certifications array.
 }
 
 const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']); // New instance for newly added property.
