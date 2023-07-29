@@ -39,7 +39,7 @@ class Nurse extends HospitalEmployee { // Child Class.
   } // Method to push the newly added certification into the certifications array.
 }
 
-const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']); // New instance for newly added property.
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']); // Creates an instance of the Nurse class and save it to a variable nurseOlynyk.
 
 nurseOlynyk.takeVacationDays(5); // This Method calls the takeVcactionDays on nurseOlynyk.
 console.log(nurseOlynyk.remainingVacationDays);
@@ -62,7 +62,8 @@ class Doctor extends HospitalEmployee {
   }
 }
 
-const docIbrahim = new Doctor('Ibrahim', 'Stanbic IBTC');
+const docIbrahim = new Doctor('Ibrahim', 'Stanbic IBTC'); // Creates an instance of the Doctor class and save it to variable docIbrahim.
+
 docIbrahim.takeVacationDays(10);
 
 console.log(docIbrahim.remainingVacationDays);
